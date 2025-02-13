@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css">
+body {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 100vh; /* Высота на весь экран */
+    margin: 0; /* Убираем отступы */
+    background-color: #f0f0f0; /* Цвет фона для наглядности */
+}
+
+#container {
+    width: 80%; /* Ширина контейнера */
+    max-width: 600px; /* Максимальная ширина контейнера */
+    background-color: white; /* Цвет фона контейнера */
+    padding: 20px; /* Внутренние отступы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+    border-radius: 8px; /* Закругленные углы */
+}
+h1 {
+  text-align: center;
+  margin: 0px auto;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: red;
+
+}
+</style>
+
+  <meta charset="UTF-8">
+  <title>Be my Valentine Будь Моим Валентином 14 февраля День Святого Валентина</title>
+</head>
+<body>
+  <h1>Be my Valentine</h1>
+  <div class="content" id="container">
+  </div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ruffle-rs/0.1.0-nightly.2024.9.13/ruffle.js"></script>
+<script type="text/javascript">
+    // const RufflePlayer = RufflePlayer || {};
+    window.addEventListener("DOMContentLoaded", () => {
+        let ruffle = RufflePlayer.newest();
+        let player = ruffle.createPlayer();
+        let container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("z0r-de_777.swf");
+    });
+</script>
+</html>
