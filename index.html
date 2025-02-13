@@ -39,13 +39,18 @@ h1 {
 </body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ruffle-rs/0.1.0-nightly.2024.9.13/ruffle.js"></script>
 <script type="text/javascript">
-    // const RufflePlayer = RufflePlayer || {};
-    window.addEventListener("DOMContentLoaded", () => {
-        let ruffle = RufflePlayer.newest();
-        let player = ruffle.createPlayer();
-        let container = document.getElementById("container");
-        container.appendChild(player);
-        player.load("z0r-de_777.swf");
-    });
+// const RufflePlayer = RufflePlayer || {};
+window.addEventListener("DOMContentLoaded", () => {
+  RufflePlayer.config = {
+    autoplay: "auto",
+    splashScreen: false,
+    unmuteOverlay: "hidden",
+  };
+  const ruffle = RufflePlayer.newest();
+  const player = ruffle.createPlayer();
+  const container = document.getElementById("container");
+  container.appendChild(player);
+  player.load("z0r-de_777.swf");
+});
 </script>
 </html>
